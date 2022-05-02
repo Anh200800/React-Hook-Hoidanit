@@ -1,13 +1,17 @@
-const Todo = (props) => {
 
-  const todos = props.todos
+const Todo = (props) => {
+  const { todos, deleteDataTodo } = props;
+ const handleDelete = (id) => {
+    deleteDataTodo(id)
+  }
     return(
         <div className='todos-container'>
           {todos.map((todo) => {
             return(
-              <li className='todo-child' key={todo.id}>{todo.title}</li>
+              <li className='todo-child' key={todo.id}>{todo.title} <span onClick={() => handleDelete(todo.id)}>X</span></li>
             )
           })}
+        <hr />
         </div>
     )
 }

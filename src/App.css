@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -35,4 +35,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse ;
+  width: 100%;
+  font-size: 13px;
+}
+td,
+th {
+  border: 1px solid #747171;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #545454;
 }
